@@ -15,7 +15,7 @@ public class MovieService {
 
     public Movie getMovieById(int id){
         return movieRepository.findById(id).get();
-        //Gets a Specific Game Out .Get Pulls Out Game Object
+        //Gets a Specific Movie Out .Get Pulls Out Movie Object
 
     }
 

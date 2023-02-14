@@ -17,8 +17,8 @@ public class MovieController {
 
     //Method One
     @GetMapping
-    public ResponseEntity<List<Movie>> getAllMovies() {
-        List<Movie> movies = movieService.getAllMovies();
+    public ResponseEntity<List<Movie>> getAllMovies() { //Get Request for Movies.
+        List<Movie> movies = movieService.getAllMovies(); //Movie Service retrieves list movies and return movie object.
         return new ResponseEntity<>(movies, HttpStatus.OK);
     }
 
@@ -34,8 +34,9 @@ public class MovieController {
         Movie movieToBeSaved = movieService.createMovie(movie);
         return new ResponseEntity<>(movieToBeSaved, HttpStatus.CREATED);
     }//Post - Takes Input Request, Saves using Service Layer - > Back User Response - Moved to be Saved = Response.
+    //Post Movie, what we want to see back.
 
-    //Alternative Notes
+    //Extended Notes.
     //400 - Request Problem
     //500 - Server Issue.
     //Deserialization - i.e JSON - Java Object
