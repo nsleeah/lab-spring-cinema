@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
+//Summary: Logic for managing movies, methods for retrieving, creating, and updating movies.
 @Service
 public class MovieService {
     @Autowired //Inject Dependencies

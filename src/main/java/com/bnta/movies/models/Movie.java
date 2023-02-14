@@ -3,6 +3,7 @@ package com.bnta.movies.models;
 import jakarta.persistence.*;
 
 //Create a movie Entity and associate with a DB.
+//Summary: Movie class defines the data model for movies.
 @Entity(name = "movies") //Plural
 public class Movie {
 
